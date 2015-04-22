@@ -1,8 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This script is used for create an special type of matrix that caches
+## its inverse
 
-## Write a short comment describing this function
-
+## Creates an special type of matrix
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
     set <- function(y) {
@@ -18,8 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Solves the inverse for a matrix created with the makeCacheMatrix function
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
     if(!is.null(inv)) {
